@@ -19,3 +19,14 @@ def test_converter_two():
 
 def test_converter_three():
   assert converter.int_to_roman_converter(3) == "III"
+
+def test_converter_four():
+  assert converter.int_to_roman_converter(4) == "IV"
+
+def test_converter_five():
+  assert converter.int_to_roman_converter(5) == "V"
+
+def test_converter_eight():
+  assert converter.int_to_roman_converter(8) == "VIII"
+
+
