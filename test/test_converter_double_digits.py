@@ -34,3 +34,9 @@ def test_converter_seventy():
 
 def test_converter_eighty_nine():
   assert converter.int_to_roman_converter(89) == "LXXXIX"
+
+def test_converter_ninety():
+  assert converter.int_to_roman_converter(90) == "XC"
+
+def test_converter_ninety_nine():
+  assert converter.int_to_roman_converter(99) == "XCIX"
