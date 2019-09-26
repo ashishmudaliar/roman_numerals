@@ -8,10 +8,18 @@ def int_to_roman_converter(numeral):
     return "Please enter valid integers greater than 0 only"
 
 def convert(numeral):
-    quotient_five = numeral // 5
-    remainder_five = numeral % 5
+  result_list = []
+  quotient_ten = numeral // 10
+  result_list.append("X" * quotient_ten)
+  remainder_ten = numeral % 10
+  if remainder_ten == 9:
+    result_list.append("IX")
+  else:
+    quotient_five = remainder_ten // 5
+    remainder_five = remainder_ten % 5
     if remainder_five == 4:
-      return "IV"
+      result_list.append("IV")
     else:
-      return ("V" * quotient_five) + ("I" * remainder_five)
+      result_list.append(("V" * quotient_five) + ("I" * remainder_five))
+  return ''.join(result_list)
     
