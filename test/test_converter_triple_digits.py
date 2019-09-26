@@ -23,3 +23,8 @@ def test_converter_five_hundred():
 def test_converter_eight_hundred_ninety_nine():
   assert converter.int_to_roman_converter(899) == "DCCCXCIX"
 
+def test_converter_nine_hundred():
+  assert converter.int_to_roman_converter(900) == "CM"
+
+def test_converter_nine_hundred_ninety_nine():
+  assert converter.int_to_roman_converter(999) == "CMXCIX"
