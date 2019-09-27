@@ -1,0 +1,17 @@
+<title>Roman Numerals</title>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+{% if messages %}
+<ul>
+                    {% for message in messages %}
+ 	<li>{{message[1]}}</li>
+{% endfor %}</ul>
+{% endif %}
+{% endwith %}
+<form action="" method="post">
+<div class="input text">
+                {{form.input_value.label}} {{form.input_value}}</div>
+<div class="input submit">
+                <input type="submit" value="Submit"></div>
+</form>
+<div class="result"> Roman Numeral : <label>{{result}} </label></div>
